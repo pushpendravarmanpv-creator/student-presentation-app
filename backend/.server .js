@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "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"; // 👈 यहां अपनी OpenAI key डालना
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "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"; // 👈 यहां अपनी OpenAI key डालना
 
 // ✅ Presentation Generate API
 app.post("/api/generate", async (req, res) => {
