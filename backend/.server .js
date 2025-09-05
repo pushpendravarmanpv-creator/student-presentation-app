@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ✅ Hardcoded OpenAI API Key
+// ✅ Hardcoded OpenAI API Key (एक बार ही declare करें)
 const OPENAI_API_KEY = "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";
 
 // ✅ Presentation Generate API
@@ -37,6 +37,6 @@ app.post("/api/generate", async (req, res) => {
   }
 });
 
-// ✅ Server Start
+// ✅ Server Start (एक बार ही)
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
